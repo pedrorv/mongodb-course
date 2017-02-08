@@ -19,7 +19,6 @@ describe('Associations', () => {
 
     Promise.all([joe.save(), blogPost.save(), comment.save()])
            .then(() => done())
-           .catch(() => done())
   })
 
   it('saves a relation between a user and a blogpost', (done) => {
